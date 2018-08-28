@@ -1,0 +1,122 @@
+.wrap {
+    padding: 0.2rem;
+}
+
+.binddata {
+    header {
+        padding: 0.46rem 0.4rem 0;
+        background: url('../../assets/头部背景色2@2x.png') no-repeat left top;
+        background-size: 100% 2.06rem;
+    }
+    .condition-pannel {
+        background-color: #fff; // margin: 0.2rem;
+        border-radius: 0.3rem;
+        padding: 0.34rem 0.4rem;
+        margin-bottom: 0.3rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+        &>div {
+            display: flex;
+            text-align: center;
+            &:first-child {
+                border-bottom: 0.02rem solid #CCCCCC;
+                padding-bottom: 0.34rem;
+            }
+            .amount {
+                border-right: 0.02rem solid #CCCCCC;
+            }
+            &>div {
+                flex: 1;
+            }
+            .label {
+                color: #333;
+                font-size: 0.28rem;
+            }
+            .select {
+                // margin: 0.15rem 0 0;
+                .xl-icon {
+                    align-items: center;
+                    flex: 1;
+                    .tsz {
+                        width: 0.22rem;
+                        height: 0.28rem;
+                        display: inline-block;
+                    }
+                }
+                display: flex;
+                &>div {
+                    flex: 2.5;
+                    margin-right: 0.1rem;
+                }
+                .am-list-line {
+                    display: inline-block;
+                    padding-right: 0;
+                    padding-left: 0;
+                    .am-list-arrow,
+                    .am-list-content {
+                        display: none;
+                    }
+                    .am-list-extra {
+                        font-size: 0.4rem;
+                        color: #FF6600;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &:last-child {
+                color: #818181;
+                padding-top: 0.24rem;
+                &>div {
+                    &>div {
+                        &:first-child {
+                            margin-bottom: 0.08rem;
+                        }
+                    }
+                }
+                .xl-icon {
+                    margin-left: 0.04rem;
+                    .notice-icon {
+                        width: 0.24rem;
+                        height: 0.26rem;
+                    }
+                }
+            }
+        }
+    }
+    .more-detail {
+        display: flex;
+        text-align: center;
+        color: #6A94EC;
+        margin-bottom: 0.24rem;
+        &>div {
+            flex: 1;
+            .xl-icon {
+                margin-left: 0.08rem;
+                vertical-align: 0.01rem;
+                i {
+                    width: 0.1rem;
+                    height: 0.16rem;
+                }
+            }
+        }
+    }
+}
+
+.agreement {
+    text-align: center;
+    margin-top: 0.26rem;
+    .xl-icon,
+    .check-wrap {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.1rem;
+        i {
+            display: inline-block;
+            width: 0.3rem;
+            height: 0.3rem;
+        }
+    }
+}
+
+.txt-primary {
+    color: #6A94EC;
+}

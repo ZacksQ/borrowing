@@ -1,0 +1,91 @@
+body {
+    background-color: #F4F4F4;
+}
+
+.borrowing {
+    .tip {
+        color: #999999;
+        text-align: center;
+        font-size: 0.28rem;
+        line-height: 0.5rem;
+        margin: 0.2rem 0;
+        padding: 0 1.2rem;
+    }
+    .waitingrepayment-item {
+        display: flex;
+        background-color: #fff;
+        border-top: 0.02rem solid #eee;
+        border-bottom: 0.02rem solid #eee;
+        padding: 0.45rem 0.4rem;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0.3rem;
+        .logo {
+            width: 0.4rem;
+            height: 0.4rem;
+            margin-right: 0.4rem;
+        }
+        .name {
+            color: #333;
+            font-size: 0.28rem;
+            flex: 0.7;
+            text-align: left;
+            font-weight: 500;
+        }
+        .status-txt {
+            color: #818181;
+            font-size: 0.28rem;
+            flex: 1.5;
+            text-align: left;
+            text-indent: 0.4rem;
+        }
+    }
+    .repayment-history {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.3rem;
+        .item {
+            display: flex;
+            height: 1.2rem;
+            &>div:last-child{
+                padding-left: 0.18rem;
+            }
+            &>div:first-child {
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                padding-top: 0.06rem;
+                text-align: center;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 0.2rem;
+                    height: 0.2rem;
+                    background-color: #CCCCCC;
+                    border-radius: 100%;
+                }
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 0.02rem;
+                    height: 100%;
+                    background-color: #CCCCCC;
+                }
+
+            }
+            &:last-child {
+                &>div:first-child {
+                    &::after {
+                        visibility: hidden;
+                    }
+                }
+            }
+            .detail {
+                color: #818181;
+                margin-bottom: 0.1rem;
+            }
+            .date {
+                color: #CCCCCC;
+            }
+        }
+    }
+}

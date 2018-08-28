@@ -1,0 +1,166 @@
+.wrap {
+    padding: 0.2rem;
+}
+
+.application {
+    header {
+        min-height: 2.06rem;
+        background-image: linear-gradient(135deg, #81C4FF 0%, #6A94EC 100%);
+        color: #fff;
+        text-align: center;
+        font-size: 0.26rem;
+        padding-top: 0.4rem;
+        box-sizing: border-box;
+        &>div:first-child {
+            font-size: 0.72rem;
+            margin-bottom: 0.1rem;
+        }
+        .notice {
+            border-top: 0.02rem solid rgba(255, 255, 255, .5);
+            margin-top: 0.28rem;
+            padding-top: 0.21rem;
+            display: flex;
+            justify-content: center;
+            .notice-content {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0.12rem;
+                    height: 0.12rem;
+                    right: -0.16rem;
+                    top: -0.05rem;
+                    background-color: #F8E71C;
+                    border-radius: 0.12rem;
+                }
+            }
+            .xl-icon {
+                flex: initial;
+                margin-right: 0.1rem;
+                i {
+                    width: 0.24rem;
+                    height: 0.28rem;
+                }
+            }
+        }
+    }
+    .operation-area {
+        img {
+            width: 100%;
+        }
+    }
+    .standard-item {
+        position: relative;
+        &.wrap {
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            padding-left: 0.2rem;
+            padding-right: 0;
+        }
+        .disable-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(255,249,236,0.92);
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            div:first-child{
+                color: #c1ac89;
+                margin-bottom: 0.2rem;
+            }
+            div:last-child{
+                color: #6A94EC;
+            }
+        }
+        box-sizing: border-box;
+        background-color: #fff;
+        margin-bottom: 0.2rem;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: space-between;
+        height: 2rem;
+        .item-left {
+            // flex: 3;
+            width: 5.34rem;
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                height: 1.4rem;
+                border-right: 0.02rem solid #D8D8D8;
+                position: absolute;
+                right: 0;
+                top: 0.1rem;
+            }
+            .item-tit {
+                display: flex;
+                margin-bottom: 0.3rem;
+                .logo {
+                    width: 0.36rem;
+                    height: 0.36rem;
+                    margin-right: 0.2rem;
+                }
+                .name {
+                    margin-right: 0.2rem;
+                    font-size: 0.28rem;
+                }
+                .tags {
+                    color: #fff;
+                    background-color: #E5CEA8;
+                    font-size: 0.2rem;
+                    line-height: 0.3rem;
+                    padding: 0 0.03rem;
+                    height: 0.3rem;
+                    margin-right: 0.1rem;
+                    text-align: center;
+                }
+            }
+            .item-info {
+                display: flex;
+                &>div {
+                    flex: 1;
+                }
+                .amount {
+                    font-size: 0.36rem;
+                }
+                .rate {
+                    font-size: 0.36rem;
+                    color: #FF6600;
+                    span {
+                        font-size: 0.24rem;
+                    }
+                }
+                .label {
+                    color: #999999;
+                    font-size: 0.26rem;
+                    margin-top: 0.1rem;
+                }
+            }
+        }
+        .item-right {
+            width: 1.74rem;
+            text-align: center;
+            padding-top: 0.4rem;
+            .xl-button {
+                margin-bottom: 0.4rem;
+            }
+            .tip {
+                color: #ff0000;
+                font-size: 0.22rem;
+            }
+        }
+    }
+    .more {
+        text-align: center;
+        font-size: 0.26rem;
+        color: #818181;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
+}

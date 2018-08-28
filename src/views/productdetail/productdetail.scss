@@ -1,0 +1,22 @@
+body{
+ background-color: #F4F4F4;   
+}
+
+.detail-info{
+    background-color: #fff;
+    padding: 0.4rem 0.3rem;
+    margin-bottom: 0.2rem;
+    .tit{
+        color: #030303;
+        font-size: 0.3rem;
+        margin-bottom: 0.44rem;
+    }
+    .content{
+        color: #818181;
+        font-size: 0.26rem;
+        p{
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+        }
+    }
+}

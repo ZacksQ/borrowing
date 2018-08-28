@@ -1,0 +1,79 @@
+body {
+    background-color: #F4F4F4;
+}
+
+.wrap {
+    padding: 0.2rem;
+}
+
+.billdetail {
+    .order-tit {
+        color: #818181;
+        display: flex;
+        justify-content: space-between;
+    }
+    .billdtail {
+        background-color: #fff;
+        display: flex;
+        padding: 0.4rem 0;
+        border-top: 0.02rem solid #eee;
+        border-bottom: 0.02rem solid #eee;
+        &>div {
+            flex: 1;
+            text-align: center;
+            .label {
+                color: #818181;
+                margin-bottom: 0.2rem;
+                font-size: 0.28rem;
+                margin-bottom: 0.14rem;
+            }
+            .amount {
+                color: #333;
+                font-size: 0.36rem;
+            }
+        }
+    }
+    .allbill-wrap {
+        .tit {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .bill-list {
+        border-top: 0.02rem solid #eee;
+        border-bottom: 0.02rem solid #eee;
+        background-color: #fff;
+        padding: 0 0.2rem;
+        .bill-item {
+            display: flex;
+            text-align: center;
+            border-bottom: 0.02rem solid #eee;
+            padding: 0.32rem 0;
+            font-size: 0.24rem;
+            align-items: flex-end;
+            &>div {
+                flex: 1;
+            }
+            .amount{
+                margin-bottom: 0.08rem;
+            }
+            .current-period{
+                .amount{
+                    font-size: 0.3rem;
+                    color: #FF6600;
+                    font-weight: 500;
+                }
+            }
+            .status{
+                color: #6A94EC;
+                div:first-child{
+                    margin-bottom: 0.08rem;
+                }
+            }
+        }
+    }
+}
+
+.txt-primary {
+    color: #6A94EC;
+}

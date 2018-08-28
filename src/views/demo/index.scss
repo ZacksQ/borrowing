@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: .24rem;
+}
+
+.demo{
+    width: 7.5rem;
+    height: 100%;
+    margin: auto;
+
+    h1{
+        font-size: 0.48rem;
+        color: #1d88d4;
+        margin-bottom: 0.2rem;
+        text-indent: 2em;
+    }
+
+    lable{
+        color: #16161b;
+        font-size: .28rem;
+        text-align: center;
+    }
+    .bd {
+        border: 1px solid #d3e4d4;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+   
+    }
+    .icon{
+        display: flex;
+        flex-wrap: wrap;
+        i{
+            margin:.2rem .6rem
+        }
+    }
+
+    .button,.toast,.dialog{
+        padding:.2rem .1rem
+    }
+}
+

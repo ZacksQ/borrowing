@@ -1,0 +1,773 @@
+/*
+  scyuns@qq.com
+  基础组件 样式表
+  可以重新定义
+*/
+
+.xl-dialog {
+    display: flex;
+    flex: 1;
+}
+
+.xl-toast {
+    // display: flex;
+    // flex:1;
+    // .mask{
+    //     position: fixed;
+    //     top: 0;
+    //     bottom: 0;
+    //     right: 0;
+    //     left: 0;
+    //     background-color:rgba(0,0,0,.5);
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     // pointer-events: none;
+    //     .modal{
+    //         margin-left: 20px;
+    //         margin-right: 20px;
+    //         background: #FFFFFF;
+    //         border-radius: 12px;
+    //     }
+    // }
+    position: fixed;
+    z-index: 105;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    background-color: rgba(0, 0, 0, .8);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.3rem;
+    &.toast-fadein {
+        opacity: 1;
+    }
+}
+
+.xl-button {
+    display: flex; // flex: 1;
+    justify-content: center;
+    .but {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 0.96rem;
+        border-radius: .18rem;
+        font-size: .36rem;
+        color: #FFFFFF;
+        letter-spacing: 0.086rem;
+        background: #6A94EC;
+        &.off {
+            background: #CED5E5;
+        }
+        .loading {
+            display: flex;
+            align-items: center;
+            font-size: .36rem;
+            i {
+                width: 0.4rem;
+                height: 0.4rem;
+                margin-right: .2rem;
+            }
+        }
+        &.btn-small {
+            width: auto;
+            font-size: 0.26rem;
+            letter-spacing: 0;
+            border-radius: 0.22rem;
+            height: 0.44rem;
+            padding: 0 0.15rem;
+            &.disable{
+                background: #CED5E5;
+            }
+            &.btn-fail {
+                background-color: #FF6666;
+            }
+        }
+        &.btn-reserve {
+            border: 0.02rem solid #6A94EC;
+            background-color: #fff;
+            color: #6A94EC;
+        }
+    }
+}
+
+.demo {
+    .xl-icon {
+        display: flex;
+    }
+}
+
+.xl-icon {
+    // display: flex;
+    display: inline-flex;
+    flex: 1;
+    i {
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        background-color: #666;
+        &.loading {
+            background: url("../assets/等待@2x.png") no-repeat center center;
+            background-size: contain;
+            animation: rotate360 1s linear infinite;
+        }
+        &.success {
+            background: url("../assets/成功@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.fail {
+            background: url("../assets/失败@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.info {
+            background: url("../assets/借款信息@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.info2 {
+            background: url("../assets/收款人信息@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.name {
+            background: url("../assets/姓名@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.cheack {
+            background: url("../assets/未选中@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.cheacked {
+            background: url("../assets/选中@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.qes {
+            background: url("../assets/问号.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.sfzzm {
+            background: url("../assets/身份证正面@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.sfzfm {
+            background: url("../assets/身份证反面@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.jxz {
+            background: url("../assets/进行中icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.ywc {
+            background: url("../assets/已完成icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.wjx {
+            background: url("../assets/未进行icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.tsz {
+            background: url("../assets/调数字@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.tsz1 {
+            background: url("../assets/调数字@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.xxts {
+            background: url("../assets/消息提示@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.jgts {
+            background: url("../assets/警告提示@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.txl {
+            background: url("../assets/通讯录@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.bkcg {
+            background: url("../assets/绑卡成功icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.bksb {
+            background: url("../assets/绑卡失败icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.khcg {
+            background: url("../assets/开户成功icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.khsb {
+            background: url("../assets/开户失败icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.xz {
+            background: url("../assets/选中icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.wxz {
+            background: url("../assets/未选中icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.shwtg {
+            background: url("../assets/审核未通过@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.lb {
+            background: url("../assets/喇叭@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.dexx {
+            background: url("../assets/大额线下icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.xyk {
+            background: url("../assets/信用卡icon@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.hsjt {
+            background: url("../assets/灰色箭头@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.lsjt {
+            background: url("../assets/蓝色小箭头@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+        &.qb {
+            background: url("../assets/钱袋1@2x.png") no-repeat center center;
+            background-size: contain;
+        }
+    }
+    @keyframes rotate360 {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+%line {
+    content: '';
+    display: inline-block;
+    background-color: #CED5E5;
+    height: 0.04rem;
+    width: 0.79rem;
+}
+
+.flow-step-wrap {
+    display: flex; // .line{
+    //     height: 0.04rem;
+    //     // background-color: #6A94EC;
+    //     background-color: #CED5E5;
+    //     width: 100%;
+    // }
+    &>div {
+        &>div:last-child {
+            text-align: center;
+            margin-top: 0.1rem;
+            color: #CED5E5;
+        }
+        .xl-icon {
+            align-items: center;
+        }
+        &:first-child {
+            &>div:last-child {
+                text-align: left;
+            }
+            .xl-icon {
+                margin-left: 0.06rem;
+                &::after {
+                    @extend %line;
+                }
+            }
+        }
+        &:last-child {
+            &>div:last-child {
+                text-align: right;
+            }
+            .xl-icon {
+                margin-right: 0.06rem;
+                &::before {
+                    @extend %line;
+                }
+                justify-content: flex-end;
+            }
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+            .xl-icon {
+                justify-content: center; // flex: 2;
+                &::before,
+                &::after {
+                    @extend %line;
+                }
+            }
+        }
+        i {
+            width: 0.56rem;
+            height: 0.56rem;
+            text-align: center;
+            font-size: 0.3rem;
+            color: #fff;
+            line-height: 0.56rem;
+        }
+        &:nth-of-type(1) {
+            i:after {
+                content: '1'
+            }
+        }
+        &:nth-of-type(2) {
+            i:after {
+                content: '2'
+            }
+        }
+        &:nth-of-type(3) {
+            i:after {
+                content: '3'
+            }
+        }
+        &:nth-of-type(4) {
+            i:after {
+                content: '4'
+            }
+        }
+        &.jxz,
+        &.ywc {
+            &>div:last-child {
+                color: #6A94EC;
+            }
+            .xl-icon {
+                &::after,
+                &::before {
+                    background-color: #6A94EC;
+                }
+            }
+        }
+        i.jxz,
+        i.ywc {
+            &::after {
+                content: ''
+            }
+        }
+    }
+}
+
+.dou {
+    .am-input-control {
+        display: flex;
+        input:first-child {
+            margin-right: 0.2rem;
+        }
+    }
+    i {
+        width: 0.38rem;
+        height: 0.26rem;
+        margin-top: 0.12rem;
+        margin-left: 0.3rem;
+    }
+}
+
+.am-list-item .am-list-line .am-list-extra.bind {
+    color: #6A94EC;
+}
+
+.tab-bar {
+    border-bottom: 0.04rem solid #F4F4F4;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    .tab-slide {
+        color: #333333;
+        font-size: 0.32rem;
+        line-height: 1rem;
+        flex: 1;
+        text-align: center;
+        background-color: #fff;
+        border-right: 0.02rem solid #D8D8D8;
+        &:last-child {
+            border-right: 0;
+        }
+        .tab-slide-tit {
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+        }
+        &.actived {
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                height: 0.06rem;
+                background-color: #6A94EC;
+                position: absolute;
+                width: 100%;
+                bottom: -0.01rem;
+                left: 0;
+            }
+            .tab-slide-tit {
+                color: #6A94EC;
+            }
+            .reward-tip,
+            .inver-ps-num {
+                display: inline;
+            }
+        }
+    }
+}
+
+.tab-body {
+    display: none;
+    &.actived-body {
+        display: block;
+    }
+}
+
+.pannel.tab-wrapper {
+    margin-bottom: 0;
+}
+
+.check-icon {
+    flex: 0.5 !important;
+    i {
+        width: 0.58rem;
+        height: 0.56rem;
+    }
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 198;
+    top: 0;
+    left: 0;
+    touch-action: none;
+}
+
+.message-item {
+    position: fixed;
+    z-index: 209;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 0.24rem; // padding: .6rem .4rem;
+    width: 5.4rem;
+    box-sizing: border-box;
+}
+
+%btn {
+    color: #fff;
+    text-align: center;
+    border-radius: 0.18rem;
+    font-size: 0.3rem;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    margin-bottom: 0.28rem;
+    &.btn-block {
+        width: 100%;
+    }
+    &.btn-primary {
+        background-color: #6A94EC;
+    }
+    &.btn-reverse {
+        color: #6A94EC;
+        border: 0.02rem solid #6A94EC;
+        background-color: #fff;
+    }
+}
+
+.tipdialog {
+    .message-item {
+        width: 3.8rem;
+    }
+    &.tipdialog-middle {
+        .message-item {
+            width: 4.6rem;
+        }
+        .tip {
+            font-size: 0.3rem !important;
+        }
+        .btn {
+            @extend %btn
+        }
+    }
+    .status {
+        font-size: 0.3rem;
+        color: #333333;
+        margin-top: 0.3rem;
+    }
+    .tip {
+        font-size: 0.24rem !important;
+        margin-top: 0.2rem;
+        span {
+            color: #ff6000;
+        }
+    }
+    .success {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+.bindstatus {
+    text-align: center; // margin-top: 0.5rem;
+    padding: .5rem .4rem; // &.notpasscheck {
+    //     .dialog-content {
+    //         .tip {
+    //             margin-bottom: 0.4rem;
+    //         }
+    //     }
+    // }
+    h4 {
+        font-size: 0.36rem;
+        text-align: center;
+        font-weight: 400;
+        margin: 0 0 0.4rem 0;
+        color: #030303;
+        font-weight: 500;
+    }
+    .btn {
+        @extend %btn
+    }
+    .dialog-content {
+        .status {
+            text-align: center;
+            font-size: 0.3rem;
+            font-weight: 500;
+            margin-top: 0.3rem;
+        }
+        &.notpasscheck {
+            .tip {
+                margin-top: 0;
+                margin-bottom: 0.3rem;
+            }
+            .btn-primary {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .khcg,
+    .khsb {
+        width: 1.96rem;
+        height: 1.64rem;
+        margin-bottom: 0.4rem
+    }
+    .success-icon {
+        width: 2.2rem;
+        height: 1.54rem;
+    }
+    .caccountfail-icon {
+        width: 1.88rem;
+        height: 1.6rem;
+    }
+    .notpassccheck-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-bottom: 0.4rem;
+    }
+    .tip {
+        font-size: 0.3rem;
+        color: #818181; // margin-top: 0.28rem;
+        .heavy {
+            color: #6A94EC;
+        }
+    }
+}
+
+.confirm {
+    .xl-button .but {
+        height: 0.72rem;
+        font-size: 0.3rem;
+        border-radius: 0.18rem;
+    }
+}
+
+.confirm {
+    font-size: 0.26rem;
+    color: #333333;
+    padding: .6rem .4rem;
+    h4 {
+        font-size: 0.34rem;
+        text-align: center;
+        margin: 0 0 0.3rem 0;
+        padding-bottom: 0.3rem;
+        border-bottom: 0.02rem solid #DCDCDC;
+    }
+    &.agreement {
+        font-size: 0.34rem;
+        text-align: center;
+        margin: 0 0 0.3rem 0;
+        padding-bottom: 0.3rem;
+        h4 {
+            border-bottom: 0;
+        }
+        .content {
+            color: #818181;
+            font-size: 0.26rem;
+            text-align: left;
+            line-height: 0.4rem;
+            height: 5.8rem;
+            overflow-y: auto;
+        }
+    }
+    .label {
+        color: #818181;
+    }
+    .beneficiary {
+        margin-bottom: 0.6rem;
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.24rem;
+        }
+    }
+    &.amount-detail {
+        .beneficiary {
+            border-bottom: 0.02rem solid #DCDCDC;
+            margin-bottom: 0.4rem;
+        }
+        .tip {
+            text-align: center;
+            color: #818181;
+            margin-bottom: 0.3rem;
+        }
+    }
+    &.repayback-detail {
+        padding: 0;
+        .header {
+            color: #030303;
+            text-align: center;
+            background-color: #F4F4F4;
+            padding: .3rem .4rem 0.06rem;
+            border-top-left-radius: 0.24rem;
+            border-top-right-radius: 0.24rem;
+            .total {
+                margin-bottom: 0.28rem;
+                span {
+                    font-size: 0.44rem;
+                }
+            }
+            .beneficiary {
+                margin-bottom: 0;
+            }
+        }
+        .detail-wrap {
+            padding: .3rem .4rem;
+            .detail {
+                color: #818181;
+                font-size: 0.24rem;
+                height: 3.6rem;
+                overflow-y: auto;
+                margin-bottom: 0.3rem;
+                &>div {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.4rem;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    span {
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sendcode {
+    &>div:last-child {
+        display: flex;
+        justify-content: space-between;
+        .but {
+            width: 2.1rem;
+            height: 0.72rem;
+            font-size: 0.3rem;
+        }
+    }
+}
+
+.sendcode {
+    .dialog-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.4rem;
+        justify-content: space-between;
+    }
+    .countdown {
+        margin-right: 0.1rem;
+        font-size: 0.3rem;
+        color: #818181;
+    }
+    input {
+        width: 2.8rem;
+        height: 0.62rem;
+        padding: 0 0.2rem;
+        margin-right: 0.2rem;
+        border-radius: 0.18rem;
+        border: 0.02rem solid #ccc;
+        appearance: none;
+        text-align: left;
+    }
+}
+
+.bottomlist {
+    .message-item {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0, 0);
+        border-radius: 0;
+        height: auto;
+        top: initial;
+        padding: 0 0.2rem;
+        &>div {
+            text-align: center;
+            font-size: 0.36rem;
+            padding: 0.1rem 0;
+            border-bottom: 0.02rem solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 0.8rem;
+        }
+    }
+}
+
+.loadingComponent {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    // background-color: #3fb1fc;
+    .loading-icon {
+        background: url("../assets/等待@2x.png") no-repeat center center;
+        background-size: contain;
+        animation: rotate360 1s linear infinite;
+        width: 0.8rem;
+        height: 0.8rem;
+        position: absolute;
+        top:0;
+        left: 0;
+        right:0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.select{
+    .am-list-extra,.am-list-content{
+        font-size: 0.4rem !important;
+    }
+}
+.am-list-extra,.am-list-content,.am-input-label,.am-input-control input{
+    font-size: 0.3rem !important;
+}
